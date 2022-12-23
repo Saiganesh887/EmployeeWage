@@ -38,6 +38,6 @@ public class EmployeeWage {
             dayCount++;
         }
         System.out.println("Wage for a Month is: " + totalWage);
-        System.out.println("Complete Working Hours: " + totalWorkHrs);
+        System.out.println("Complete Working Hours per month: " + totalWorkHrs);
     }
 }
