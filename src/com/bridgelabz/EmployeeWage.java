@@ -20,13 +20,13 @@ public class EmployeeWage {
         switch (employeeCheck) {
             case IS_FULL_TIME:
                 System.out.println("Employee is Present for Full Time");
-                System.out.println("Daily Wage per Full-Time Employee : ");
-                wagePerFullDay();
+                int daily_Wage = WAGE_PER_HOUR * FULL_DAY_HRS;
+                System.out.println("Daily Wage per Full-Time Employee : "+daily_Wage);
                 break;
             case IS_PART_TIME:
                 System.out.println("Employee is Part_Time");
-                System.out.println("Daily Wage per Part-Time Employee : ");
-                wagePerPartTime();
+                int daily_Wage = WAGE_PER_HOUR * PART_TIME_HRS;
+                System.out.println("Daily Wage per Part-Time Employee : "+daily_Wage);
                 break;
             default:
                 System.out.println("Employee is Absent");
