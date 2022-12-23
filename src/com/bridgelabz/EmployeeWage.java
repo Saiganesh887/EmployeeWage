@@ -1,11 +1,12 @@
 package com.bridgelabz;
 
 public class EmployeeWage {
-    static int wage_per_hour = 20;
-    static int full_day_hrs = 8;
+    static int WAGE_DAY_HOUR = 20;
+    static int FULL_DAY_HRS = 8;
+         
     static void wagePerFullDay(){
-        int daily_wage = wage_per_hour * full_day_hrs;
-        System.out.println(daily_wage);
+           int daily_wage = WAGE_DAY_HOUR * FULL_DAY_HRS;
+           System.out.println(daily_wage);
     }
     public static void main(String[] args){
         System.out.println("Welcome to Employee Wage Computation Program on Master Branch");
