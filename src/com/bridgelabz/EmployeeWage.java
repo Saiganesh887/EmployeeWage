@@ -6,14 +6,6 @@ public class EmployeeWage {
     static final int PART_TIME_HRS = 4;
     static final int IS_FULL_TIME = 2;
     static final int IS_PART_TIME = 1;
-    static void wagePerFullDay(){
-        int daily_Wage = WAGE_PER_HOUR * FULL_DAY_HRS;
-        System.out.println(daily_Wage);
-    }
-    static void wagePerPartTime(){
-        int part_Time_Wage = PART_TIME_HRS * WAGE_PER_HOUR;
-        System.out.println(part_Time_Wage);
-    }
     public static void main(String[] args){
         System.out.println("Welcome to Employee Wage Computation");
         int employeeCheck = (int) Math.floor(Math.random() * 10) % 3;
