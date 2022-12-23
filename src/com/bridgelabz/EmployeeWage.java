@@ -15,18 +15,21 @@ public class EmployeeWage {
         System.out.println(part_Time_Wage);
     }
     public static void main(String[] args){
-        System.out.println("Welcome to Employee Wage Computation Program on Master Branch");
-        int employeeCheck = (int)(Math.round((Math.random())*10))%3;
-        if(employeeCheck == IS_FULL_TIME){
-            System.out.println("Employee is present");
-        } else if(employeeCheck == IS_PART_TIME){
-            System.out.println("Employee is part-time");
-        }else{
-            System.out.println("Employee is absent");
+        System.out.println("Welcome to Employee Wage Computation");
+        int employeeCheck = (int) Math.floor(Math.random() * 10) % 3;
+        switch (employeeCheck) {
+            case IS_FULL_TIME:
+                System.out.println("Employee is Present for Full Time");
+                System.out.println("Daily Wage per Full-Time Employee : ");
+                wagePerFullDay();
+                break;
+            case IS_PART_TIME:
+                System.out.println("Employee is Part_Time");
+                System.out.println("Daily Wage per Part-Time Employee : ");
+                wagePerPartTime();
+                break;
+            default:
+                System.out.println("Employee is Absent");
         }
-        System.out.println("Daily Wage per Full-Time Employee : ");
-        wagePerFullDay();
-        System.out.println("Daily Wage per Part-Time Employee : ");
-        wagePerPartTime();
     }
 }
